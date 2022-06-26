@@ -24,6 +24,10 @@ export default defineComponent({
         let list=computed(()=>{
             return store.state.list
         })
+<<<<<<< HEAD
+=======
+        store.commit('init')
+>>>>>>> 60920f1 (新增本地存储功能)
         let value=ref('')
         let addItem=(val)=>{
             value.value=val
