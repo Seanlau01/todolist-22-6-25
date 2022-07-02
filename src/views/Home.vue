@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home">
         <nav-header @addItem="addItem"></nav-header>
         <nav-main :list="list" @del="del"></nav-main>
         <nav-footer :list="list" @clear="clear"></nav-footer>
@@ -24,10 +24,7 @@ export default defineComponent({
         let list=computed(()=>{
             return store.state.list
         })
-<<<<<<< HEAD
-=======
         store.commit('init')
->>>>>>> 60920f1 (新增本地存储功能)
         let value=ref('')
         let addItem=(val)=>{
             value.value=val
@@ -64,5 +61,10 @@ export default defineComponent({
 })
 </script>
 <style scoped lang="scss">
-    
+    .home {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+    }
 </style>

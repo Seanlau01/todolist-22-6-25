@@ -26,6 +26,18 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
     input {
-        margin-bottom:20px;
+        height:40px;
+        line-height:40px;
+        width:200px;
+        border:1px solid #ECECEC;
+        margin-top:100px;
+        padding-left:18px;
+        font-size:16px;
+        outline:none;
+        box-shadow:0px 0px 2px 1px #E4E4E5;
+        border-radius:20px;
+       &:focus {
+        border:1px solid #409EFF;
+       }
     }
 </style>

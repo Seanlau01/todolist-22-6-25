@@ -22,16 +22,6 @@ export default createStore({
       ]
     },
     mutations:{
-<<<<<<< HEAD
-      addTodo(state,payload){
-        state.list.push(payload)
-      },
-      delTodo(state,payload){
-        state.list.splice(payload,1)
-      },
-      clearTodo(state,payload){
-        state.list=payload
-=======
       init(state){
         if(localStorage.getItem('listJSON')===null){
           localStorage.setItem('listJSON',JSON.stringify(state.list))
@@ -50,7 +40,6 @@ export default createStore({
       clearTodo(state,payload){
         state.list=payload
         localStorage.setItem('listJSON',JSON.stringify(state.list))
->>>>>>> 60920f1 (新增本地存储功能)
       }
     },
     actions:{

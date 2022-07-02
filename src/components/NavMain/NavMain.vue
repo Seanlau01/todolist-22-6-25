@@ -39,7 +39,7 @@ export default defineComponent({
         height:35px;
         line-height:35px;
         position: relative;
-        width:150px;
+        width:200px;
         cursor:pointer;
         button {
           position: absolute;
