@@ -40,6 +40,7 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
     .container {
+        margin-top:20px;
          display:flex;
          align-items:center;
          .btn {
